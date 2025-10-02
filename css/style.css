@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.kartu-profile {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.kartu-profile img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.kartu-profile h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.kartu-profile p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.kartu-profile a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.kartu-profile a:hover {
+  text-decoration: underline;
+}
+
+#sapaButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#sapaButton:hover {
+  background-color: #005fa3;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 600px) {
+  .kartu-profile {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .kartu-profile h1 {
+    font-size: 20px;
+  }
+
+  .kartu-profile p {
+    font-size: 14px;
+  }
+
+  #sapaButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.kartu-profile {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Animasi Shake */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.kartu-profile.shake {
+  animation: shake 0.5s;
+}
